@@ -45,7 +45,20 @@
 	* merge() Merges several arrays to make a single multi-channel array. All the input matrices must have the same size.
 
 
+* Resize image :
 
+	* dst = cv2.resize(src, dsize[, dst[, fx[, fy[, interpolation]]]])
+		* cv2.resize(image, None, fx = 2, fy = 2)
+		* cv2.resize(image, dsize = (w,h), interpolation = cv2.INTER_AREA)
+		* cv2.resize(image, dsize = (w,h), interpolation = cv2.INTER_AREA)
+
+
+* Flipping image :
+
+	* dst = cv2.flip(src, flipCode[, dst])
+	* parameters :
+		* src: input image
+		* flipCode: a flag to specify how to flip the array; 0 means flipping around the x-axis and positive value (for example, 1) means flipping around y-axis. Negative value (for example, -1) means flipping around both axes.		
 
 
 
