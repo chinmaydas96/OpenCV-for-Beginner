@@ -9,9 +9,9 @@
 * retval = cv2.imread(filename[, flags])
   
 * flags :
-  1. cv2.IMREAD_GRAYSCALE or 0: Loads image in grayscale mode
-  2. cv2.IMREAD_COLOR or 1: Loads a color image. Any transparency of image will be neglected. It is the default flag.
-  3. cv2.IMREAD_UNCHANGED or -1: Loads image using its original channels, which could include the alpha channel.
+  * cv2.IMREAD_GRAYSCALE or 0: Loads image in grayscale mode
+  * cv2.IMREAD_COLOR or 1: Loads a color image. Any transparency of image will be neglected. It is the default flag.
+  * cv2.IMREAD_UNCHANGED or -1: Loads image using its original channels, which could include the alpha channel.
 
 #### Write image 
 * cv2.imwrite(filename, img[, params])
@@ -60,17 +60,17 @@
 ### Annotating Image
 #### Drawing a Line
 ---
-     * img = cv2.line(img, pt1, pt2, color[, thickness[, lineType[, shift]]])
+* img = cv2.line(img, pt1, pt2, color[, thickness[, lineType[, shift]]])
 
-     * The function has 4 required arguments:
-       * img: Image on which we will draw a line
-       * pt1: First point (x, y) location of the line segment
-       * pt2: Second point of the line segment
-       * color: Color of the line which will be drawn
+* The function has 4 required arguments:
+  * img: Image on which we will draw a line
+  * pt1: First point (x, y) location of the line segment
+  * pt2: Second point of the line segment
+  * color: Color of the line which will be drawn
 
-       Optional arguments that are commonly used include:
-       * thickness: Integer specifying the line thickness. Default value is 1.
-       * lineType: Type of the line. Default value is cv2.LINE_8 which stands for an 8-connected line. Usually, cv2.LINE_AA (antialiased or smooth line) is used for the lineType.
+  Optional arguments that are commonly used include:
+  * thickness: Integer specifying the line thickness. Default value is 1.
+  * lineType: Type of the line. Default value is cv2.LINE_8 which stands for an 8-connected line. Usually, cv2.LINE_AA (antialiased or smooth line) is used for the lineType.
 
 #### Drawing a Circle
 * img = cv2.circle(img, center, radius, color[, thickness[, lineType[, shift]]])
