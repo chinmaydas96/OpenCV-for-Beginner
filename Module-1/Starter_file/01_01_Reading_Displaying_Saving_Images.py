@@ -31,12 +31,12 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Read another image and save it in PNG format.
-image = cv2.imread('Apollo-8-Launch.jpg')
+image = cv2.imread('Apollo-8-launch.jpg')
 
 
 # Display and write image in png format.
 cv2.imshow('Image', image)
-cv2.imwrite('Apollo-8-Launch.png', image)
+cv2.imwrite('Apollo-8-launch.png', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 

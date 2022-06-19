@@ -69,8 +69,8 @@ cv2.destroyAllWindows()
 # Resizing dimesnsion while maintaining aspect ratio.
 # Method 2: Using 'dsize'.
 desired_width = 200
-aspect_ratio = desired_width / cropped_region.shape[1]
-desired_height = int(cropped_region.shape[0] * aspect_ratio)
+aspect_ratio = cropped_region.shape[0] / cropped_region.shape[1]
+desired_height = int(desired_width * aspect_ratio)
 dim = (desired_width, desired_height)
 
 # Resize the image.
