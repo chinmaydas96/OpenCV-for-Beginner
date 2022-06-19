@@ -76,13 +76,38 @@
 
 #### Drawing a Circle
 * img = cv2.circle(img, center, radius, color[, thickness[, lineType[, shift]]])
-* The function has 4 required arguments:
-  * img: Image on which we will draw a line
-  * center: Center of the circle
-  * radius: Radius of the circle
-  * color: Color of the circle which will be drawn
+  * The function has 4 required arguments:
+    * img: Image on which we will draw a line
+    * center: Center of the circle
+    * radius: Radius of the circle
+    * color: Color of the circle which will be drawn
 
-* Optional arguments that are commonly used include:
-  * thickness: Thickness of the circle outline (if positive). If a negative value is supplied for this argument, it will result in a filled circle.
-  * lineType: Type of the circle boundary. This is exact same as lineType argument in cv2.line()
+  * Optional arguments that are commonly used include:
+    * thickness: Thickness of the circle outline (if positive). If a negative value is supplied for this argument, it will result in a filled circle.
+    * lineType: Type of the circle boundary. This is exact same as lineType argument in cv2.line()
         
+#### Drawing a Rectangle
+* img = cv2.rectangle(img, pt1, pt2, color[, thickness[, lineType[, shift]]])
+* The function has 4 required arguments:
+  * img: Image on which the rectangle is to be drawn.
+  * pt1: Vertex of the rectangle. Usually we use the top-left vertex here.
+  * pt2: Vertex of the rectangle opposite to pt1. Usually we use the bottom-right vertex here.
+  * color: Rectangle color
+* Optional arguments that are commonly used include:
+  * thickness: Thickness of the circle outline (if positive). If a negative value is supplied for this argument, it will result in a filled rectangle. 
+  * lineType: Type of the circle boundary. This is exact same as lineType argument in cv2.line()
+
+
+#### Adding Text
+* img = cv2.putText(img, text, org, fontFace, fontScale, color[, thickness[, lineType[, bottomLeftOrigin]]])
+* The function has 6 required arguments:
+  * img: Image on which the text has to be written. 
+  * text: Text string to be written. 
+  * org: Bottom-left corner of the text string in the image. 
+  * fontFace: Font type 
+  * fontScale: Font scale factor that is multiplied by the font-specific base size. 
+  * color: Font color
+* Optional arguments that are commonly used include:
+  * thickness: Integer specifying the line thickness for the text. Default value is 1. 
+  * lineType: Type of the line. Default value is 8 which stands for an 8-connected line. Usually, cv2.LINE_AA (antialiased or smooth line) is used for the lineType.
+  
