@@ -86,3 +86,31 @@
                for the pixel: 3, 5, 7, and so on. 
   * C: Constant subtracted from the mean or weighted mean (see the details below). 
        Normally, it is positive but may be zero or negative as well.
+
+
+## Logical Operations
+
+### Bitwise Operations on Images
+
+* Example API for bitwise_and(). Others include: bitwise_not(), bitwise_or(), bitwise_xor()
+* dst = cv2.bitwise_and( src1, src2[, dst[, mask]] )
+* The function has 2 required arguments:
+
+  * src1: first input array or a scalar.
+  * src2: second input array or a scalar.
+* 
+* An important optional argument is:
+  * mask: optional operation mask, 8-bit single channel array, 
+          that specifies elements of the output array to be changed.
+
+
+## Alpha Channel
+
+* The alpha channel determines the transparency of a color.
+* It's the grayscale fourth channel of an image that has pixel intensities ranging from 0-255. 
+* 0 represents full transparency, 255 represents full opacity and intermediate values provide translucency.
+
+#### Split the channel
+* b, g, r, a = cv2.split(img)
+* cv2.merge([c1, c2])
+
