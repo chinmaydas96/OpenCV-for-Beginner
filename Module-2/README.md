@@ -114,3 +114,18 @@
 * b, g, r, a = cv2.split(img)
 * cv2.merge([c1, c2])
 
+
+#### Putwatermark
+* We are using addWeighted() function to put the watermarks.
+* dst = cv2.addWeighted(src1, alpha, src2, beta, gamma[, dst[, dtype]])
+* The function has 5 required arguments:
+
+  * src: first input array.
+  * alpha: weight of the first array elements.
+  * src2: second input array.
+  * beta: weight of the second array elements.
+  * gamma: scalar added to each sum.
+  * dtype : optional depth of the output array; 
+    when both input arrays have the same depth, dtype can be set to -1, 
+    which will be equivalent to src1.depth().
+* ex : cv2.addWeighted(roi_2, 1, logo_bgr, 0.6, 0)
