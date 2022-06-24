@@ -29,7 +29,7 @@
 
 ---
 
-## Histogram Equalization
+### Histogram Equalization
 
 * An image histogram is a graphical representation of the tonal distribution of data. 
 * Each histogram is simply an array with 256 bins, and each bins contains the number of pixels with that intensity. 
@@ -56,3 +56,16 @@ img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 # Convert back to BGR format.
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
 ```
+
+## Color Segmentation
+---
+
+### Define a Color Mask for each Color
+
+* dst = cv2.inRange(src, lowerb, upperb[, dst]) 
+* The function has 3 required arguments:
+
+  * src: first input array
+  * lowerb: inclusive lower boundary array or a scalar
+  * upperb: inclusive upper boundary array or a scalar
+
