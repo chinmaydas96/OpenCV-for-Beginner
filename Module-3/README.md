@@ -69,3 +69,6 @@ img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
   * lowerb: inclusive lower boundary array or a scalar
   * upperb: inclusive upper boundary array or a scalar
 
+---
+### Count non-zero pixels
+* c = cv2.countNonZero(gray_img)
