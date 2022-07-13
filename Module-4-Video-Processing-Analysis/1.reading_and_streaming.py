@@ -16,3 +16,4 @@ while True:
 
 video_cap.release()
 cv2.destroyWindow(win_name)
+

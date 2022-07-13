@@ -10,10 +10,10 @@ video_cap = cv2.VideoCapture(source)
 if not video_cap.isOpened():
     print('Error opening video stream or file')
 
-ret, frame = video_cap.read()
-cv2.imshow('First frame', frame)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# ret, frame = video_cap.read()
+# cv2.imshow('First frame', frame)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
 frame_w = int(video_cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_h = int(video_cap.get(cv2.CAP_PROP_FRAME_HEIGHT))

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-input_video = 'Dance.mp4'
+input_video = 'motion_test.mp4'
 
 # Create video writer and video capture object.
 video_cap = cv2.VideoCapture(input_video)
